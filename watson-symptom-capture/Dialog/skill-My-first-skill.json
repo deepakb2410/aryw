@@ -1,0 +1,1657 @@
+{
+  "intents": [
+    {
+      "intent": "Age",
+      "examples": [
+        {
+          "text": "age"
+        },
+        {
+          "text": "How old are you?"
+        },
+        {
+          "text": "old"
+        },
+        {
+          "text": "what is your age?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "breathing_rate",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "High",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Normal",
+          "synonyms": [
+            "Normal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Very High",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "experience",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Breathing issues",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dry cough",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fever or high temperature",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "No, Ia'm feeling fine",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "family",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Child",
+          "synonyms": [
+            "kid"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Myself",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Someone",
+          "synonyms": [
+            "Others"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "spouse",
+          "synonyms": [
+            "wife"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gender",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "female",
+          "synonyms": [
+            "f",
+            "fe",
+            "fem",
+            "fema",
+            "femal",
+            "Female",
+            "Woman",
+            "Women"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "male",
+          "synonyms": [
+            "m",
+            "ma",
+            "mal",
+            "Male",
+            "Man",
+            "Men"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "others",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "heartRate",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "High",
+          "synonyms": [
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "high"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Low",
+          "synonyms": [
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "low"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Medium",
+          "synonyms": [
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "medium"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Normal",
+          "synonyms": [
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "normal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Very High",
+          "synonyms": [
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "very high"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "morbidity",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cancer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "heart problem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "high bp",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "Precautions",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "High",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Low",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Medium",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Proximity",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-percentage",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "temperature",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "High fever",
+          "synonyms": [
+            "100",
+            "100.1",
+            "100.10",
+            "100.2",
+            "100.3",
+            "100.4",
+            "100.5",
+            "100.6",
+            "100.7",
+            "100.8",
+            "100.9",
+            "101",
+            "101.1",
+            "101.10",
+            "101.2",
+            "101.3",
+            "101.4",
+            "101.5",
+            "101.6",
+            "101.7",
+            "101.8",
+            "101.9",
+            "102",
+            "102.0",
+            "99.10",
+            "99.6",
+            "99.7",
+            "99.8",
+            "99.9",
+            "a little",
+            "feeling low",
+            "high",
+            "little bit",
+            "yeah",
+            "Yes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Medium",
+          "synonyms": [
+            "98.10",
+            "98.7",
+            "98.8",
+            "98.9",
+            "99.1",
+            "99.2",
+            "99.3",
+            "99.4",
+            "99.5",
+            "medium",
+            "mediumsized",
+            "moderate"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Normal",
+          "synonyms": [
+            "96",
+            "96.0",
+            "96.1",
+            "96.10",
+            "96.2",
+            "96.3",
+            "96.4",
+            "96.5",
+            "96.6",
+            "96.7",
+            "96.8",
+            "96.9",
+            "97",
+            "97.0",
+            "97.1",
+            "97.10",
+            "97.2",
+            "97.3",
+            "97.4",
+            "97.5",
+            "97.6",
+            "97.7",
+            "97.8",
+            "97.9",
+            "98",
+            "98.0",
+            "98.1",
+            "98.2",
+            "98.3",
+            "98.4",
+            "98.5",
+            "98.6",
+            "correct",
+            "fine",
+            "good",
+            "no fever",
+            "Normal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Very High Fever",
+          "synonyms": [
+            "102.1",
+            "102.10",
+            "102.2",
+            "102.3",
+            "102.4",
+            "102.5",
+            "102.6",
+            "102.7",
+            "102.8",
+            "102.9",
+            "103",
+            "103.0",
+            "103.1",
+            "103.10",
+            "103.2",
+            "103.3",
+            "103.4",
+            "103.5",
+            "103.6",
+            "103.7",
+            "103.8",
+            "103.9",
+            "104",
+            "104.0",
+            "104.1",
+            "104.10",
+            "104.2",
+            "104.3",
+            "104.4",
+            "104.5",
+            "104.6",
+            "104.7",
+            "104.8",
+            "104.9",
+            "105",
+            "105.0",
+            "feeling sick",
+            "high",
+            "too much",
+            "very high"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Tested",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "travelled",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "have not travelled",
+            "not travelled",
+            "not travelled internationally",
+            "was not travelled",
+            "was not travelling"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "have travelled",
+            "have travelled internationally",
+            "was travelled",
+            "was travelling",
+            "yeah"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "http://173.193.79.240:31574/api/patient/addsymptom",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your heart rate right now?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1586600039797",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1586600039807",
+      "previous_sibling": "handler_8_1586600039807"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please share your user Id."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587048302588",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1587048302596",
+      "previous_sibling": "handler_1_1587048302596"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Okay, Please let us know your current body temperature in degree Fahrenheit (Normal body temperature is 98.6°F):"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1586593350537",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1586593350549",
+      "previous_sibling": "handler_2_1586593350549"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1586604971622",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1586605171687"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_5_1587047935172",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587048301925",
+      "previous_sibling": "response_3_1587485077186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587048302588",
+      "context": {
+        "user_id": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_1_1587048302596"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1586593350537",
+      "context": {
+        "Tested": "@Tested"
+      },
+      "conditions": "@Tested",
+      "event_name": "input",
+      "dialog_node": "handler_2_1586593350549"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587059990710",
+      "context": {
+        "user_id": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1587059990713"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please submit your symptoms to proceed further"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587487833987",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1587487834000",
+      "previous_sibling": "handler_4_1587487834000"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please share your user ID? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587541081419",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1587541081433",
+      "previous_sibling": "handler_8_1587541081433"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your breathing rate right now?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1587372626443",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1587372626458",
+      "previous_sibling": "handler_4_1587372626458"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "In the last 14 days, have you travelled internationally?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1597941661877",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1597941661896",
+      "previous_sibling": "handler_6_1597941661896"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587320106172",
+      "context": {
+        "travelled": "@travelled"
+      },
+      "conditions": "@travelled",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587320106210"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1587372626443",
+      "context": {
+        "Proximity": "@Proximity"
+      },
+      "conditions": "@Proximity",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587372626458"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1587487833987",
+      "context": {
+        "user_id": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587487834000"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1597941453723",
+      "context": {
+        "heart_rate": "@heartRate"
+      },
+      "conditions": "@heartRate",
+      "event_name": "input",
+      "dialog_node": "handler_5_1597941453742"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Okay, Please let us know your current body temperature in degree Fahrenheit (Normal body temperature is 98.6°F):"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1604571222072",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1604571222138",
+      "previous_sibling": "handler_6_1604571222138"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_10_1586593055582",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1586600038711"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please share your userID mentioned in App"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587059990710",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587059990713",
+      "previous_sibling": "handler_2_1587059990713"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "what is your experience?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587320106172",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587320106210",
+      "previous_sibling": "handler_4_1587320106210"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your heart rate right now?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1597941453723",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1597941453742",
+      "previous_sibling": "handler_5_1597941453742"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1597941661877",
+      "context": {
+        "Precautions": "@Precautions"
+      },
+      "conditions": "@Precautions",
+      "event_name": "input",
+      "dialog_node": "handler_6_1597941661896"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1604571222072",
+      "context": {
+        "temperature": "@temperature"
+      },
+      "conditions": "@temperature",
+      "event_name": "input",
+      "dialog_node": "handler_6_1604571222138"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1586600039797",
+      "context": {
+        "experience": "@experience"
+      },
+      "conditions": "@experience",
+      "event_name": "input",
+      "dialog_node": "handler_8_1586600039807"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587541081419",
+      "context": {
+        "user_id": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587541081433"
+    },
+    {
+      "type": "frame",
+      "title": "Precautions",
+      "output": {
+        "generic": [
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "title": "Please select the level of precautions you take on daily basis?",
+            "options": [
+              {
+                "label": "High",
+                "value": {
+                  "input": {
+                    "text": "high"
+                  }
+                }
+              },
+              {
+                "label": "Medium",
+                "value": {
+                  "input": {
+                    "text": "medium"
+                  }
+                }
+              },
+              {
+                "label": "Low",
+                "value": {
+                  "input": {
+                    "text": "low"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1586604971622"
+      },
+      "conditions": "@experience || anything_else",
+      "dialog_node": "node_10_1586593055582",
+      "previous_sibling": "node_1_1587372231376"
+    },
+    {
+      "type": "frame",
+      "title": "Experience",
+      "output": {
+        "generic": [
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "title": "How do you feel? Do you have any of these symptoms?",
+            "options": [
+              {
+                "label": "fever or high temperature",
+                "value": {
+                  "input": {
+                    "text": "fever or high temperature"
+                  }
+                }
+              },
+              {
+                "label": "dry cough",
+                "value": {
+                  "input": {
+                    "text": "dry cough"
+                  }
+                }
+              },
+              {
+                "label": "Breathing issue",
+                "value": {
+                  "input": {
+                    "text": "breathing issue"
+                  }
+                }
+              },
+              {
+                "label": "No, I am feeling fine",
+                "value": {
+                  "input": {
+                    "text": "feeling fine"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1586593055582"
+      },
+      "conditions": "@Proximity || anything_else",
+      "dialog_node": "node_1_1587372231376",
+      "previous_sibling": "node_8_1587319928069"
+    },
+    {
+      "type": "frame",
+      "title": "Testing Performing - Tested",
+      "output": {
+        "generic": [
+          {
+            "title": "Have u been tested for COVID-19?",
+            "options": [
+              {
+                "label": "Yes, tested for COVID-19",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No, not yet",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1586591726358"
+      },
+      "conditions": "@heartRate || anything_else",
+      "dialog_node": "node_2_1586590984448",
+      "previous_sibling": "node_9_1604568131680"
+    },
+    {
+      "type": "frame",
+      "title": "Confirmation",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "user_id": "$user_id",
+            "isverified": true
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1587047935172"
+      },
+      "conditions": "@sys-number || anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1587485276300",
+      "previous_sibling": "node_4_1587046372042"
+    },
+    {
+      "type": "standard",
+      "title": "Testing Performing - Temperature",
+      "output": {
+        "generic": [
+          {
+            "title": "Please let us know your current body temperature in degree Fahrenheit (Normal body temperature is 98.6°F):",
+            "options": [
+              {
+                "label": "Normal (96°F-98.6°F)",
+                "value": {
+                  "input": {
+                    "text": "normal"
+                  }
+                }
+              },
+              {
+                "label": "Medium (98.7°F-99.5°F) ",
+                "value": {
+                  "input": {
+                    "text": "medium"
+                  }
+                }
+              },
+              {
+                "label": "High Fever (99.6°F-102°F) ",
+                "value": {
+                  "input": {
+                    "text": "high"
+                  }
+                }
+              },
+              {
+                "label": "Very High Fever (>102°F)",
+                "value": {
+                  "input": {
+                    "text": "very high"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_9_1604568131680"
+      },
+      "conditions": "$user_id",
+      "dialog_node": "node_3_1604566529288",
+      "previous_sibling": "slot_5_1587541081419"
+    },
+    {
+      "type": "standard",
+      "title": "User ID",
+      "output": {
+        "generic": [
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Please confirm your Mobile Number with country code"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1587485276300"
+      },
+      "conditions": "@sys-number",
+      "dialog_node": "node_4_1587046372042",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Thank you",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you! Don't worry, I will be helping you with the analysis details on the scanning conducted with me. Please get your analysis information and related advisory required through mobile app. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1586616875405"
+      },
+      "conditions": "@Precautions || anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1586604971622",
+      "previous_sibling": "node_9_1586590844842"
+    },
+    {
+      "type": "frame",
+      "title": "Family",
+      "output": {
+        "generic": [
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "user_id": "$user_id",
+            "isverified": true
+          },
+          "result_variable": "webhook_result_2"
+        },
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1586590844842"
+      },
+      "conditions": "",
+      "dialog_node": "node_5_1587047935172",
+      "previous_sibling": "node_3_1587485276300"
+    },
+    {
+      "type": "frame",
+      "title": "Testing Performing - Travelled",
+      "output": {
+        "generic": [
+          {
+            "title": "Have u travelled outside your city in the last 14 to 21 days?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1587319928069"
+      },
+      "conditions": "@Tested || anything_else",
+      "dialog_node": "node_8_1586591726358",
+      "previous_sibling": "node_2_1586590984448"
+    },
+    {
+      "type": "standard",
+      "title": "Webhook",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "age": "$webhook_result_3.age",
+            "Tested": "$Tested",
+            "family": "myself",
+            "gender": "$webhook_result_3.gender",
+            "user_id": "$user_id",
+            "Proximity": "$Proximity",
+            "travelled": "$travelled",
+            "experience": "$experience",
+            "heart_rate": "$heart_rate",
+            "Precautions": "$Precautions",
+            "temperature": "$temperature"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "dialog_node": "node_8_1586616875405",
+      "previous_sibling": "node_5_1586604971622"
+    },
+    {
+      "type": "frame",
+      "title": "Proximity",
+      "output": {
+        "generic": [
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "title": "Have you or family been in close proximity of any COVID-19 patient?",
+            "options": [
+              {
+                "label": "Not anyone I know of...",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              },
+              {
+                "label": "Yes, someone COVID-19 confirmed",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1587372231376"
+      },
+      "conditions": "@travelled || anything_else",
+      "dialog_node": "node_8_1587319928069",
+      "previous_sibling": "node_8_1586591726358"
+    },
+    {
+      "type": "frame",
+      "title": "Symptoms Collection",
+      "output": {
+        "generic": [
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1604566529288"
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1586590844842",
+      "previous_sibling": "node_5_1587047935172"
+    },
+    {
+      "type": "frame",
+      "title": "Heart Rate",
+      "output": {
+        "generic": [
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "title": "Please let us know your about Heart Rate?",
+            "options": [
+              {
+                "label": "Low",
+                "value": {
+                  "input": {
+                    "text": "low"
+                  }
+                }
+              },
+              {
+                "label": "Normal",
+                "value": {
+                  "input": {
+                    "text": " normal"
+                  }
+                }
+              },
+              {
+                "label": "Medium",
+                "value": {
+                  "input": {
+                    "text": "medium"
+                  }
+                }
+              },
+              {
+                "label": "High",
+                "value": {
+                  "input": {
+                    "text": "high"
+                  }
+                }
+              },
+              {
+                "label": "Very High",
+                "value": {
+                  "input": {
+                    "text": "very high"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1586590844842",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1586590984448"
+      },
+      "conditions": "@temperature || anything_else",
+      "dialog_node": "node_9_1604568131680",
+      "previous_sibling": "node_3_1604566529288"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi! Our coronavirus disease self assessment scan has been developed on the basis of guidelines from the WHO and XXX, XXX. This interaction should not be taken as expert medical advice. Any information you share with us will be kept strictly confidential. ** Powered by Altran **"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "dialog_node": "response_1_1587216984853"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1586616875405",
+      "context": {
+        "user_id": null
+      },
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_2_1586702670289"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you, You are registered as $webhook_result_3.userName"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1587485276300",
+      "conditions": "$webhook_result_3.userName",
+      "dialog_node": "response_2_1587485297765",
+      "previous_sibling": "slot_10_1587487833987"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1587047935172",
+      "disabled": true,
+      "dialog_node": "response_3_1587485077186",
+      "previous_sibling": "response_4_1587482484802"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "time": 3000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Thank you! $webhook_result_2.userName,  Your user Id is recognized"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Please confirm if patient belongs to your family",
+            "options": [
+              {
+                "label": "Myself",
+                "value": {
+                  "input": {
+                    "text": "Myself"
+                  }
+                }
+              },
+              {
+                "label": "Spouse",
+                "value": {
+                  "input": {
+                    "text": "Spouse"
+                  }
+                }
+              },
+              {
+                "label": "Child",
+                "value": {
+                  "input": {
+                    "text": "Child"
+                  }
+                }
+              },
+              {
+                "label": "Others",
+                "value": {
+                  "input": {
+                    "text": "Others"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1587047935172",
+      "disabled": true,
+      "conditions": "",
+      "dialog_node": "response_4_1587482484802"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Sorry,  Please share your symptoms again due to technical error."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1586616875405",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1586702671189",
+      "previous_sibling": "response_2_1586702670289"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1587485276300",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1587485300987",
+      "previous_sibling": "response_2_1587485297765"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1587485276300",
+      "variable": "$user_id",
+      "dialog_node": "slot_10_1587487833987"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1586590984448",
+      "variable": "$heart_rate",
+      "dialog_node": "slot_1_1597941453723"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587372231376",
+      "variable": "$Proximity",
+      "dialog_node": "slot_4_1587372626443"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1586604971622",
+      "variable": "$Precautions",
+      "dialog_node": "slot_4_1597941661877",
+      "previous_sibling": "handler_1_1586605171687"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1586590844842",
+      "variable": "$user_id",
+      "dialog_node": "slot_5_1587541081419"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1604568131680",
+      "variable": "$temperature",
+      "dialog_node": "slot_5_1604571222072"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1586591726358",
+      "variable": "$Tested",
+      "dialog_node": "slot_8_1586593350537"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1587047935172",
+      "variable": "$user_id",
+      "dialog_node": "slot_8_1587048302588",
+      "previous_sibling": "handler_1_1587048301925"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1587046372042",
+      "variable": "$user_id",
+      "dialog_node": "slot_8_1587059990710"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1586593055582",
+      "variable": "$experience",
+      "dialog_node": "slot_9_1586600039797",
+      "previous_sibling": "handler_6_1586600038711"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1587319928069",
+      "variable": "$travelled",
+      "dialog_node": "slot_9_1587320106172"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi! Let's start capturing your symptoms for further analysis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1587046372042"
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
